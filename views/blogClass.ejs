@@ -1,0 +1,32 @@
+<div class="page">   
+  <nav class="vertical">
+        <h3>Blog Posts</h3>
+        <a href="/blogClass">Classes and Id's</a>  
+        <a href="/blogDom">Javascript and the DOM</a>   
+        <a href="/blogFizzBuzz">Problem Solving Techniques</a>       
+  </nav>
+  <div class="container">
+    <div class="blog-layout">  
+      <h1>HTML Class and Id Best Practice..</h1>
+    </div>
+
+    <div class="blog-post">
+      <h2>What are the best practices for using html classes and id's?</h2>
+      <img src="/images/brad.jpg" class="avatar" alt="Blog Author">
+      <h3>by Brad Eggins</h3>
+      <p>I am a currently a beginner in my web development journey and I wanted to highlight the best practices that I have learnt so far around using  the HTML id and class attributes.</p>
+      <p>HTML id’s and classes are attributes that you can use on a specific html element. You can then reference these attributes in CSS (and JS) to make style adjustments on a class (or group of elements) or on an id (a unique element). In CSS you reference these by using .class-name for a class and #id-name for an id. </p>
+      <p>When deciding which one to use with your HTML element you need to ask yourself the question;</p>
+      <p style="font-style: italic; text-align: center;">“Will I be using this attribute to similarly style multiple elements now or in the future?”</p>
+      <p>If the answer is yes, then make the attribute a class. If you are unsure, then make the attribute a class. Classes make the maintenance of multiple elements much more efficient. Conversely an id must be used uniquely on each html page. Here’s a (non-exhaustive) list of other html class and attribute best practice.</p>
+      <ul>
+        <li>Do not use a class and or an id when a semantic html tag exists for the same purpose (i.e don’t use <code>< div class="nav" ></code> when the <code>< nav ></code> tag exists for that purpose</li>
+        <li>Use functional id and class names. Use naming conventions that make the code as logical as possible for other developers and for yourself in the future</li>
+        <li>An id must be unique, I’ll say that again an id must be unique</li>
+        <li>You can also use multiple classes on a single element</li>
+        <li>Javascript functions such as <code>getElementById</code> are used to manipulate specific elements based on their id so correct use is imperative </li>
+      </ul>
+      <p>Please get in contact with me if you have any feed back or additional information or ideas that could be useful to display on this blog entry. Happy coding!</p>
+    </div>
+  </div>
+</div>

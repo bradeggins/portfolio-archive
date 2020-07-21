@@ -1,0 +1,83 @@
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+       #map {
+        height: 100%;
+      }
+      
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #5CDB95;
+        
+      }
+
+      #index-link{
+        color: #EDF5E1;
+        font-family: Arial, Helvetica, sans-serif;
+        align-items: center;
+        font-size: 24pt;
+        padding: 0.6em;
+        border-radius: 0.5em;
+        border-color: #05386B;
+        border-style: solid;
+        border-width: 2px;
+        background-color: #05386B;
+        text-decoration: none;
+        
+      }
+
+      .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+        max-width: 800px;
+      }
+
+      h1{
+        font-family: 'Montserrat Subrayada', sans-serif;
+        font-size: 10vh;
+        color: #EDF5E1;
+      }
+
+      h2{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 3vh;
+        color: #EDF5E1;
+      }
+
+      .wrapper{
+        height: 90%;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+      }
+    
+      .horizontal-bottom{
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        position: fixed;
+        color: #05386B;
+        justify-content: space-evenly;
+
+    }
+
+    .horizontal-bottom a{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16pt;
+      color: #EDF5E1;
+      text-decoration: none;
+      
+    }
+
+    .horizontal-bottom img{
+      height: 40px;
+      width: 40px;
+    }

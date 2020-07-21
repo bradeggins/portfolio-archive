@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Brad Eggins Portfolio</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/favicon.ico">
+  </head>
+  
+  <body>
+    <%- include ('./partials/navbar') %>
+    <%- body %>
+    </body>
+</html>
+
+
+<script>
+
+// Script to animate h1 https://www.w3schools.com/howto/howto_js_typewriter.asp
+window.addEventListener("load", typeWriter)
+var i = 0;
+var txt = 'BRAD EGGINS'; /* The text */
+var speed = 120; /* The speed/duration of the effect in milliseconds */
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("bradeggins").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+</script>
+
+
+
+

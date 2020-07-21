@@ -1,0 +1,132 @@
+<div class="page">
+    <nav class="vertical">
+        <h3>Blog Posts</h3>
+        <a href="/blogClass">Classes and Id's</a>  
+        <a href="/blogDom">Javascript and the DOM</a>   
+        <a href="/blogFizzBuzz">Problem Solving Techniques</a> 
+    </nav>
+    <div class ="container">
+      <div class="blog-layout">
+        <h1>Practical Problem Solving Techniques..</h1>
+      </div>
+      <div class="blog-post">
+        <h2>Strategies to help you effectively problem solve.</h2>
+        <img src="/images/brad.jpg" class="avatar" alt="Blog Author">
+        <h3>by Brad Eggins</h3>
+        <h4>Describe a time where you got blocked on a simple problem..</h4>
+        <p>
+          I was going through some freecodecamp.com Javascript tutorials when I came across a tutorial on concatenating strings.
+          Right away I was stumped because I didn't even know what concatenating was! Right, off to google, turns out concatenate means to;
+          <code>link (things) together in a chain or series</code>. Ok so I guess this tutorial is how to go about linking things
+          together to create a string.
+        </p>
+        <p>
+          The tutorial gave an example and then asked you to complete a similiar example to progress onto the next subject. I 
+          read the information and was confident I could solve the problem easily enough! Not so fast, what appeared to be a very
+          simple exercise was causing me significant frustration. No matter what I did, I wasn't able to join this simple string and
+           pass the lesson.
+        </p>
+        <p>
+            I though I had made adequate attempts to solve this on my own so I decided to do some further research on the topic using
+            both google and the freecodecamp.com help link. Turns out you need to include spaces where they need to go if you are 
+            constructing strings using an acutal string and a variable. In fact the spaces are crucial!
+        </p>
+        <h4>How did that make you feel?</h4>
+        <p>
+            Frustrated! It was annoying to hold up my progress for that amount of time based on the ommission of a simple space
+            BUT this was a fantastic lesson because it effectively taught me how closely I needed to pay attention to the strings
+            I was creating and where the spaces in those strings fell. A really fantastic learning outcome!
+        </p>
+        <h4>What resources did you use to solve this problem?</h4>
+        <p>
+            I used:
+            <ul>
+                <li><span class="highlight">Googling</span></li>
+                <li><span class="highlight">Trying something</span></li>
+                <li><span class="highlight">freecodecamp Get Help!</span></li>
+                <li><span class="highlight">Reading error messages</span></li>
+            </ul>
+        </p>
+        <h4>Describe a time you solved a problem in an elegant way..</h4>
+        <h2>SPOILER ALERT!! If you haven't completed Super Fizz Buzz look away now!</h2>
+        <p>
+            As part of a Javascript problem solving exercise we were presented with
+            a problem. Given an array (a list) of numbers from 1 to 100, change any
+            number divisble by 3 to Fizz, change any multiples of 5 to Buzz and change
+            any multiples of both 3 and 5 (i.e. 15) with Fizz Buzz.
+        </p>
+        <p>
+            I then attempted to translate this problem into psuedocode 
+        </p>
+        <code>// Given an array of integers iterate (loop through) of the array</code>
+        <code>// If multiple of 3 replace number with "Fizz"</code>
+        <code>// Else If multiple of 5 replace with "Buzz"</code>
+        <code>// Else If multiple of 15 replace with "Buzz"</code>
+        <code>// Return the array</code>
+        <p>
+            Ok Great! That sounds like a plan! The next question I had was how do you check 
+            if something is divisible by 3? Well a quick search of Google should help; "How to check
+            if a number (integer is divisible by 3?"
+        </p>
+        <p>
+            The first search reult on Google is a link to the exact question on stackoverflow.com.
+            Turns out if you divide a number by 3 and there is no remainder(nothing left over) then
+            then that number must be divisible by 3! The same then holds true for being divisible by both 5
+            and 15!
+        </p>
+        <p>
+            In fact the % (modulo operator) does that for us! We can now express our check of being
+            divisble by 3 like this..
+        </p>
+        <code> if (27 % 3 == 0) {</code>
+        <code>27 must be divisible by 3;</code>
+        <code>do something!</code>
+        <code>}</code>
+        <p>
+            Ok I have now got a good idea on what the problem is and how to provide different options
+            of how to replace the specific words. Time to have a go at coding my first solution!
+        </p>
+        <img src="/images/superfizzbuzzunsolved.png" class="responsive">
+        <p>
+            Ok how did we go? Well the first 6 tests seem to pass ok, so we're definitely on the right track!
+            Where did we go wrong? Well if we have a look at the Expected output vs the Received you will see
+            that when given an array of 30 numbers it expected to see "FizzBuzz" replace number 30 but only 
+            saw "Fizz".
+        </p>
+        <p>
+            Ok so now it seems odd that 30 is divisible by 15 and only received "Fizz". If we step through
+            our code line by line using and the number of 30 as an example what will happen?
+        </p>
+        <p>
+            So then we get to the first if statement; <code>if(30 % 3 == 0)</code> is true (30 % 3 does
+            in fact equal 0). So we then proced inside the first loop and change the number 30 to "Fizz.."
+        </p>
+        <p>
+            Hold on a sec! We replaced 30 with "Fizz" but it should've been "FizzBuzz". There must be an
+            issue with how the order of checking the <code>if</code> statments evaluates and replaces
+            the number! I wonded whether I can put the check for % 15 <code>if(30 % 15) == 0</code>
+            ahead of the if statement check for % 3. Lets give that a go!
+        </p>
+        <img src="/images/superfizzbuzzsolved.png" class="responsive">
+        <h2>EUREKA! We solved it!</h2>
+        <h4>What solving techniques did you use?</h4>
+        <p>
+            We used:
+            <ul>
+                <li><span class="highlight">Psuedocode</span></li>
+                <li><span class="highlight">Googling</span></li>
+                <li><span class="highlight">Trying something</span></li>
+                <li><span class="highlight">Psuedocode</span></li>
+                <li><span class="highlight">Reading error messages</span></li>
+            </ul>
+        </p>
+        <h4>What did we learn?</h4>
+        <p>
+            The major takeawy from this exercise was the order that the code is executed from top to 
+            bottom (when evaluating our <code>else if</code> statements is important! If we had thought about how the 
+            code was to execute from top down we may have solved the problem more quickly,  which is easy with
+            hindsight but our problem solving was sound! 
+        </p>
+      </div>
+    </div>
+  </div>

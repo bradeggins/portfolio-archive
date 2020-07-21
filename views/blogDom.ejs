@@ -1,0 +1,45 @@
+<div class="page">
+  <nav class="vertical">
+    <h3>Blog Posts</h3>
+    <a href="/blogClass">Classes and Id's</a>  
+    <a href="/blogDom">Javascript and the DOM</a>   
+    <a href="/blogFizzBuzz">Problem Solving Techniques</a>       
+  </nav>
+  <div class ="container">
+    <div class="blog-layout">
+      <h1>JavaScript and the DOM (Document Object Model)</h1>
+    </div>
+    <div class="blog-post">
+      <h2>Essential Concenpts to Understand...</h2>
+      <img src="/images/brad.jpg" class="avatar" alt="Blog Author">
+      <h3>by Brad Eggins</h3>
+      <h4>Describe an analogy to describe HTML and CSS?</h4>
+      <p>Html is akin to the builder of the website, it defines the structure using individual elements. It does not have any visual appeal which is where CSS comes in. CSS allows you to to define how to style these individual elements. You can assign a special class to multiple elements or you can assign a unique Id to single out individual elements that you would like to style in a particular way. CSS can be thought of as the artist(or stylist), it takes the elements of the structure and styles them in a way to be more visually appealing or make the website responsive to devices with different screen sizes.</p>
+      <p>If you were building a house CSS would be the paint or the floorings or the fittings and HTML would be the structure of the house.</p>
+      <h4>For loops and iteration..</h4>
+      <p>Loops are a way to iterate over a long list of data, to automate a single action which would otherwise be tedious and very long. Take the following for loop for instance;</p>
+      <img src="/images/iteration.png" class="responsive">
+      <p>This loop continues 10 times (the value of i will be from 0 to 9 as we start counting from 0 but it still means 10 iterations).</p>
+      <p>If you were to use an analogy of doing a set of 10 pushups the elements of a for loop can be explained in this way;</p>
+      <ul>
+        <li><span class="highlight">var i = 0 </span> this how you initialise your count of pushups, you start counting pushups at 0 so pushups = 0</li>
+        <li><span class="highlight">i < 10 </span> this is where the loop terminates, you keep going with pushups until your pushup count is less than 10 (again you start counting at 0 so when i = 9 the for loop will be on its last iteration but the number of iterations is still 10)</li>
+        <li><span class="highlight">i++ </span> is how you change the count of i after every iteration of what is inside the loop. So after you complete 1 pushup you increase your pushups count (i = 1 or pushups = 1)</li>
+      </ul>
+      <img src="/images/forloop.png" class="responsive">
+      <h4>Describe what the DOM is and an example of how you might interact with it.</h4>
+      <p>The DOM is a separate representation of the web page once it is loaded. It is created by your web browser and is different to HTML. The HTML DOM is like a family tree of all of the HTML elements in the form of JS objects. This allows us to access each of these elements and run a program or script on that element so you are able to dynamically alter the structure or style of the web page after it is loaded.</p>
+      <p>For example you now have the ability to change the background colour of your webpage based on a specific action that you can define in Javascript. For example using the DOM and Javascript you could implement this; “When I double click the mouse access the background-colour from the body of the document and change the colour”.</p>
+      <h4>How do you access items in an array of from an object?</h4>
+      <p>An <span class="highlight">array</span> is a list of values. You can access items in an array like this;</p>
+      <img src="/images/array.png" class="responsive">
+      <p>An <span class="highlight">object</span> is a list of keys and values. You can think of an object like a dictionary. For example, if you are to look up something in a dictionary you use your word you are looking for (a key), to find the meaning (or value) of that word.</p>
+      <img src="/images/object.png" class="responsive">
+      <h4>What are functions and why are they so useful?</h4>
+      <p>Functions provide you with the ability to factor out repetitive areas of code. If you are repeating the same action more than once a function would be useful. A function is a block of code that is designed to perform a particular task.</p>
+      <p>Functions allow you to create a separate block of code that you can ask multiple times to perform an action. Functions can make your code more readable and they allow you to do something multiple times that would otherwise be repetitive.</p>
+      <p>Below is an example of using a function to multiply 2 numbers..</p>
+      <img src="/images/function.png" class="responsive">
+    </div>
+  </div>
+</div>

@@ -1,0 +1,281 @@
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    padding: 1em;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #7f8688;
+    border-radius: 1em;
+}
+
+.about{
+    align-self: flex-start;
+    margin: 0.2em;
+}
+
+a:hover{
+    border-radius: 1em;
+    border-style: solid;
+    border-color: #f3e367;
+    color:#f3e367;
+    border-width: 2px;
+}
+
+.avatar{
+    filter: grayscale(100%);
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #7f8688;
+    margin: 1em;
+    display: flex;
+    align-self: center;
+}
+
+/* https://html-online.com/articles/blinking-text-css-animation/ */
+.blink{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #fff;    }
+    49%{    color: #fff; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #fff;    }
+}
+
+.blog-layout{
+    display: flex;
+    flex-direction: row;
+}
+
+.blog-post{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 2em;
+}
+
+.blog-post h3{
+    align-self: center;
+    margin-top: 0;
+}
+
+body{
+    margin: 0;
+}
+
+.container{
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.grid{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+}
+.grid a {
+    color: #7f8688;
+    font-size: 16pt;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 1em;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #7f8688;
+    max-width: 400px;
+    align-self: center;
+    
+}
+
+.grid a:hover{ 
+    background: #7f8688;
+    border-color: #7f8688;
+    border-style: solid;
+    border-width: 2px;
+    color: #f3e367
+}
+
+.grid h4{
+    text-align: left;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11vmin;
+    display: flex;
+    justify-content: center;
+    margin-block-end: auto;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    background-color: #f3e367;
+    margin-block-start: auto;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16pt
+}
+
+h4{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 16pt;
+}
+
+.highlight{
+    background-color: #f3e367;
+    font-style: italic;
+    font-size: 16pt;
+    padding: 0.1em;
+    margin-right: 0.5em;
+}
+
+.horizontal{
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    z-index: 9999;
+    top: 0;
+    background-color: #7f8688;
+    justify-content: space-evenly;
+}
+
+.horizontal img{
+    max-width: 20px;
+    height: auto;
+    filter: grayscale(100%);
+}
+
+.landing{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-image: url("../../images/sup.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-color: white;
+    height: 60vh;
+}
+
+.landing h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12vh;
+    display: flex;
+    justify-content: center;
+    color:white;
+    margin-top: 0;
+}
+
+.landing h2{
+    display: flex;
+    flex-direction: row;
+    align-self: baseline;
+}
+
+li{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13pt; 
+    text-indent: 2em;
+    margin: 0.5em;
+    text-align: justify;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13pt;
+    margin: 0.5em;
+    text-align: justify;
+}
+
+.page{
+    display: flex;
+    flex-direction: row;
+}
+
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    padding: 2em;
+    border-bottom: #7f8688;
+    border-width: 2px;
+    border-style: solid;
+    border
+    
+}
+
+.portfolio a{
+    height: 12pt;
+    color: #7f8688;
+    width: 100px;
+}
+
+.portfolio a:hover{
+    background-color: #7f8688;
+    color: #f3e367;
+    border-color: #7f8688;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.portfolio h4{
+    text-align: justify;
+}
+
+.portfolio-img{
+    filter: grayscale(100%);
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+.responsive{
+    margin: 1em;
+    max-width: 100%;
+    height: auto;
+}
+
+.side{
+    display: flex;
+    flex-direction: row;
+}
+
+.social a{
+    border-style: none;
+}
+
+#title-iam{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4vh;
+    display: flex;
+    justify-content: center;
+    color: #7f8688;
+    margin-left: 5vw;
+}
+
+.vertical{
+    position: relative;
+    z-index: 1;
+    width: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #7f8688;
+    margin: 2vw;
+    font-size: 2vh;
+    border-radius: 1em;
+}

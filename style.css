@@ -1,0 +1,11 @@
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    padding: 1em;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #7f8688;
+    border-radius: 1em;
+}
